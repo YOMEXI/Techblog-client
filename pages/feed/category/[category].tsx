@@ -42,7 +42,7 @@ const FeedByCategory = () => {
     <>
       <h3 className="centerwithFlex">{category}</h3>
 
-      {category && (
+      {category && feed.length > 0 ? (
         <InfiniteScroll
           hasMore={hasMore}
           next={allFeed}
@@ -53,9 +53,7 @@ const FeedByCategory = () => {
             return <FeedCard feed={feed} key={i} />;
           })}
         </InfiniteScroll>
-      )}
-
-      {category && feed?.length === 0 && (
+      ) : (
         <h3 className="centerwithFlex">No Feed for {category} Yet</h3>
       )}
     </>

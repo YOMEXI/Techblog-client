@@ -49,7 +49,9 @@ const CreateFeed = () => {
       const { data } = await axios.post(`/api/cloudinary/upload`, form);
       console.log(data);
       toast.success(data.msg);
-      router.back();
+      setTimeout(() => {
+        router.push("/");
+      }, 3000);
       setLoading(false);
     } catch (error: any) {
       toast.success(error);
