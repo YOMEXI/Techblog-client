@@ -23,7 +23,7 @@ const HomePageSection = () => {
             component="img"
             height="140"
             image="/img/home.jpg"
-            alt="green iguana"
+            alt=""
           />
           <CardContent className="centerwithFlex ">
             <Typography
