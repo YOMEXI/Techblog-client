@@ -113,3 +113,9 @@
   border-radius: 10px;
   font-size: 1.1rem;
 }
+
+.categorybutton {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
