@@ -13,11 +13,11 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { AnyAsyncThunk } from "@reduxjs/toolkit/dist/matchers";
+
 import { useRouter } from "next/router";
 
-const createFeed = () => {
-  const [category, setCategory] = useState("");
+const CreateFeed = () => {
+  const [category, setCategory] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [forms, setforms] = useState<any>({
     body: "",
@@ -130,4 +130,4 @@ const createFeed = () => {
   );
 };
 
-export default createFeed;
+export default CreateFeed;

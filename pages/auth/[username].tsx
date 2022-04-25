@@ -26,6 +26,7 @@ const UserInfo = () => {
           height="190"
           width="190"
           src={user?.imgUrl ? user?.imgUrl : "/img/avatar.png"}
+          alt=""
         />
         <CardActions className="userinfo">{user?.username}</CardActions>
         <CardActions className="userinfo">{user?.email}</CardActions>

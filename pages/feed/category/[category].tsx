@@ -35,7 +35,7 @@ const FeedByCategory = () => {
 
   useEffect(() => {
     initialFeeds();
-  }, [router]);
+  }, [router, pageNumber]);
 
   console.log(feed.length);
   return (
