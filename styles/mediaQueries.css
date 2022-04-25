@@ -1,0 +1,26 @@
+@media (max-width: 550px) {
+  .feedcardmediabox {
+    display: none;
+    background-color: aqua;
+  }
+
+  .homepagecard {
+    font-size: 1rem !important;
+  }
+  .homepagecard2 {
+    font-size: 0.89rem !important;
+  }
+
+  .likeCommentSectionSpanFeed {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .likeCommentSection {
+    font-size: 1.3rem !important;
+  }
+
+  .likeCommentSectionIcon {
+    font-size: 1.3rem !important;
+  }
+}

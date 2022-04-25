@@ -1,0 +1,115 @@
+.formcontainer {
+  margin-top: 2rem;
+}
+
+.feedLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerwithFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.feedcardContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+}
+
+.feedbox-2 {
+  flex: 180%;
+  color: white;
+  background-color: rgb(7, 7, 7);
+}
+
+.feedImg {
+  object-fit: cover !important;
+  height: 90%;
+  padding: 10px;
+  margin-right: 11px;
+}
+
+.feedAvatar {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedtitle {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  font-weight: bolder !important;
+  font-size: 0.9rem !important;
+  padding: 0.3rem;
+  margin-bottom: 10px !important;
+  color: #000 !important;
+  background-color: rgb(150, 138, 138) !important;
+}
+
+/* feedcard */
+.feedcard {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  background-color: rgb(183, 207, 207);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.likeCommentSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.likeCommentSectionIcon {
+  font-size: 1.2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.likeCommentSectionSpan {
+  display: flex;
+  flex-direction: row;
+}
+
+.likeCommentSectionSpanFeed {
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 5.3rem;
+  background-color: #000;
+  color: white;
+}
+
+.categoryselect {
+  background-color: #000;
+  color: white;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.userinfo {
+  padding: 30px;
+  background-color: aqua;
+  color: rgb(17, 18, 19);
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
