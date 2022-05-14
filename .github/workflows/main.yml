@@ -17,5 +17,4 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
         env:
           HD_NEXT_PUBLIC_API: ${{secrets.NEXT_PUBLIC_API}}
-          HD_CorsAllowedWebsite: ${{secrets.CorsAllowedWebsite}}
-CorsAllowedWebsite
+          # HD_CorsAllowedWebsite: ${{secrets.CorsAllowedWebsite}}
