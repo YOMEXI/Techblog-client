@@ -62,7 +62,11 @@ export const likeFeed = async (id: number, feedId: number, liked: boolean) => {
 };
 
 export const logout = async (router: NextRouter) => {
-  await axios.get(`/api/cloudinary/logout`);
-  window.location.href = "/auth/login";
-  localStorage.removeItem("user");
+  const res = await axios.get(`/api/cloudinary/logout`);
+
+  if (res) {
+    toast.success(res.data.msg);
+    window.location.href = "/auth/login";
+    localStorage.removeItem("user");
+  }
 };

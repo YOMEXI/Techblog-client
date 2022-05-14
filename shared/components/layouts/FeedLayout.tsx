@@ -17,7 +17,6 @@ import FeedCard from "./appLayout/FeedCard";
 const FeedLayout = () => {
   const { data: feed } = useSWR("/api/feed?page=0");
 
-  console.log(feed);
   return (
     <>
       <Grid container spacing={2} className="feedLayout">

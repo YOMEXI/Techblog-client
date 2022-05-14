@@ -45,7 +45,7 @@ const FeedCard = ({ feed }: any) => {
 
   return (
     <>
-      <Grid item lg={5} md={6} sm={8}>
+      <Grid container item lg={5} md={5} sm={8} xs={10}>
         <Container>
           <Card sx={{ maxWidth: "100%", marginTop: 4 }}>
             {feed && (

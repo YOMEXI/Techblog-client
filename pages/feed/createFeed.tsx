@@ -121,7 +121,12 @@ const CreateFeed = () => {
               </Button>
             </Box>
             <Box sx={{ marginTop: 4 }}>
-              <Button variant="contained" color="primary" type="submit">
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                disabled
+              >
                 Submit
               </Button>
             </Box>

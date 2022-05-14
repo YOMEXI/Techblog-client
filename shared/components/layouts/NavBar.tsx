@@ -57,7 +57,6 @@ const NavBar = () => {
               TechBlog
             </Link>
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -130,36 +129,17 @@ const NavBar = () => {
                 </Button>
               ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt={user?.imgUrl} />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              <MenuItem onClick={handleCloseUserMenu}>
-                <Button disabled={!user} onClick={() => logout(router)}>
-                  Logout
-                </Button>
-              </MenuItem>
-            </Menu>
-          </Box>
+          {user && (
+            <MenuItem onClick={handleCloseUserMenu}>
+              <Button
+                variant="contained"
+                disabled={!user}
+                onClick={() => logout(router)}
+              >
+                Logout
+              </Button>
+            </MenuItem>
+          )}
         </Toolbar>
       </Container>
     </AppBar>

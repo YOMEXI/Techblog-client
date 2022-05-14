@@ -23,4 +23,12 @@
   .likeCommentSectionIcon {
     font-size: 1.3rem !important;
   }
+  .categoryselect {
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .feedtitle {
+    padding: 0.1rem 0rem;
+    border-radius: 3px;
+  }
 }
