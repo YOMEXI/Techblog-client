@@ -99,7 +99,10 @@ const FeedCard = ({ feed }: any) => {
                       underline="none"
                       style={{ color: "white" }}
                     >
-                      {feed?.body?.substring(0, 25)}....
+                      {router.pathname === "/feed/[id]" && feed.body}
+                      {router.pathname != "/feed/[id]" &&
+                        feed?.body?.substring(0, 25)}
+                      ...
                     </Link>
                   </CardActions>
                   <Box className="likeCommentSection">

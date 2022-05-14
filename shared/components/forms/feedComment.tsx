@@ -42,9 +42,17 @@ const FeedCommentCard = ({ comment }: any) => {
         <Grid item lg={5} md={6} sm={8} xs={11}>
           <Container>
             <Card sx={{ maxWidth: "100%", marginTop: 4 }}>
-              <Typography component="span" className="centerwithFlex">
+              {/* <Typography
+                component="span"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                }}
+              >
                 Comments
-              </Typography>
+              </Typography> */}
               {comment &&
                 comment?.map((comment: any, i: any) => (
                   <div className="feedcardContainer" key={i}>
