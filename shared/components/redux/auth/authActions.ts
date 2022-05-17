@@ -20,9 +20,11 @@ export const register =
       const { data } = await axios.post("/api/cloudinary/register", user);
       toast.success(data.msg);
       dispatch(registerSuccess(data));
-      setTimeout(() => {
-        router.push("/");
-      }, 4000);
+      if (data.msg) {
+        setTimeout(() => {
+          router.push("/");
+        }, 3000);
+      }
     } catch (error: any) {
       dispatch(registerFail(error.data));
     }
