@@ -11,13 +11,14 @@ const UserInfo = () => {
   const username = router.query.username;
 
   const { data: user } = useSWR(username ? `/api/auth/${username}` : "");
-  console.log(user);
+
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: 2,
         marginTop: 2,
       }}
     >

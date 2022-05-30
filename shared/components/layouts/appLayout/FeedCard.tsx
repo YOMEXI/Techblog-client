@@ -36,6 +36,8 @@ const FeedCard = ({ feed }: any) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const { user } = useAppSelector((state) => state.auth);
   //
   const router = useRouter();
 
@@ -45,7 +47,7 @@ const FeedCard = ({ feed }: any) => {
 
   return (
     <>
-      <Grid container item lg={5} md={5} sm={8} xs={10}>
+      <Grid container item lg={5} md={5} sm={10} xs={11}>
         <Container>
           <Card sx={{ maxWidth: "100%", marginTop: 4 }}>
             {feed && (
@@ -107,7 +109,9 @@ const FeedCard = ({ feed }: any) => {
                   </CardActions>
                   <Box className="likeCommentSection">
                     <span className="likeCommentSectionSpan">
-                      <span onClick={() => likeFeed(feed?.id, feedId, liked)}>
+                      <span
+                        onClick={() => likeFeed(feed?.id, feedId, liked, user)}
+                      >
                         {liked ? (
                           <ThumbUpIcon
                             className="pointer likeCommentSectionIcon"

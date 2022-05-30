@@ -51,7 +51,13 @@ export const ToastFailure = (msg: any) => {
 };
 
 //
-export const likeFeed = async (id: number, feedId: number, liked: boolean) => {
+export const likeFeed = async (
+  id: number,
+  feedId: number,
+  liked: boolean,
+  user: any
+) => {
+  if (!user) return toast.error("Unauthorized Please login");
   if (liked) {
     const { data } = await axios.post(`/api/feed/unlike/${id}`);
     mutate(`/api/feed/${feedId}`);

@@ -32,7 +32,7 @@ const CategorySelect = () => {
   return (
     <Container>
       <Grid container>
-        <Grid item lg={4} md={4} sm={5} xs={5}>
+        <Grid item lg={4} md={4} sm={5} xs={6}>
           <ListItemButton>
             <ListItemText
               primary="Cloud Devops"
@@ -41,7 +41,7 @@ const CategorySelect = () => {
             />
           </ListItemButton>
         </Grid>
-        <Grid item lg={4} md={4} sm={5} xs={5}>
+        <Grid item lg={4} md={4} sm={5} xs={6}>
           <ListItemButton>
             <ListItemText
               primary="Programming Tools"
@@ -50,7 +50,7 @@ const CategorySelect = () => {
             />
           </ListItemButton>
         </Grid>
-        <Grid item lg={4} md={4} sm={5} xs={5}>
+        <Grid item lg={4} md={4} sm={5} xs={6}>
           <ListItemButton>
             <ListItemText
               primary="Data Science"
